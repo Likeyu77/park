@@ -1,0 +1,1041 @@
+body{
+    font-size: 20px;
+}
+
+main{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width:63em;
+    margin: 6em auto;
+    padding-top: 2em;
+    background-color: #f5f5f5;
+    border-radius: 18px;
+    box-shadow: 20px 20px 24px #726d6d;
+}
+
+p#userID{
+    color: white;
+    font-family: 'Italianno', cursive;
+}
+
+section, .check-available, .submition {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.coloum-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+header{
+    font-family: 'Italianno', cursive;
+}
+
+h2, h3{
+    color: #ff4a4a;
+}
+
+/* navigation bar */
+
+nav {
+    overflow: hidden;
+    background-color:#ff4a4a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+#menu{
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ff4a4a;
+    width: 100%;
+}
+
+#menu article{
+    position: fixed;
+    left: 90%;
+    top:-0.6em;
+}
+
+.inside-container{
+    display: flex;
+    justify-content: center;
+}  
+
+.inside-container a{
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+    padding: 0.7em 2em; 
+    text-decoration: none;
+}
+
+.inside-container a:hover{
+    background-color: rgb(216, 27, 27);
+}
+
+nav article{
+    position: fixed;
+    left:1em;
+    top: -11px;
+}
+
+nav article p, #menu article p{
+    font-size: 1.5em;
+    color: white;
+    font-family:'Italianno', cursive;
+    font-weight: bold;
+}
+/* header */
+#photo-header {
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+    position: relative;
+    top: 2.1em;
+	font-size: 1.4em;
+	line-height: 1.5em;
+    height: 60vh;
+    width: 100%;
+}
+
+#photo-header .banner-title {
+    display: flex;
+    justify-content: center;
+	background: rgb(108 108 108 / 66%);
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    height: 6em;
+    width: 100%;
+}
+
+#photo-header .in-main-page{
+    height:8em;
+    top: 30%;
+}
+#photo-header h1 {
+	font-weight: 500;
+	font-size: 3.5em;
+	line-height: 1em;
+	padding: 0.5em 1em 0 1em;
+    margin-top: 0;
+	color: #ffffff;
+}
+
+#photo-header .in-main-page h1{
+    margin-top: 0%;
+    padding: 0;
+}
+
+#photo-header p {
+	padding: 1em 1em 10% 1em;
+}
+
+body.activity-page #photo-header{
+    background-image: url(../image/tram-4379656_1280.jpg);
+}
+
+body.about-us-page #photo-header{
+    background-image: url(../image/architecture-3794997_1280.jpg);
+}
+
+body.accommodation-page #photo-header{
+    background-image: url(../image/living-room-1558191_1280.jpg);
+}
+
+body.book-page #photo-header{
+    background-image: url(../image/car-6603726_1280.jpg);
+}
+
+body.main-page #photo-header{
+    background-image: url(../image/pexels-pixabay-459728.jpg);
+    height: 100vh;
+}
+
+#main-button {
+    font-size:45px;
+    position: absolute;
+    top: 84%;
+    left: 45%;
+    right: 45%;
+    animation-name: buttonplus;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#main-button a {
+    text-decoration: none;
+    color: rgb(240, 165, 3);
+}
+@keyframes buttonplus{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* train animation */
+.animation-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5em;
+}
+
+.animation{
+    position: relative;
+    animation-name:train-race;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.train{
+    animation-timing-function: linear;
+}
+
+.high-speed-train{
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes train-race{
+    from {
+        left: 0vw;
+    }
+    to {
+        left: 100vw;
+    }
+    
+}
+/* Main page */
+.main-section{
+    margin: 2em;
+}
+
+ .vedio-train-container{
+    height:14em ;
+    width: 60%;
+    
+    margin: 0;
+    justify-content: center;
+} 
+.history-video{
+    height: 17em;
+    width: 51%;
+    margin: 0 auto;
+}
+.vedio-train{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+} 
+
+.fun-in-park{
+    margin-left: 2em ;
+}
+
+.fun-in-park a{
+    color: #ff4a4a;
+    text-decoration: none;
+}
+
+.section-with-back{ 
+    margin: 5em 0;
+    height:18em;
+    background-image: url(../image/pexels-sergio-souza-1782146.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.content-on-image{
+    text-align: center; 
+    position: relative;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    padding: 0.7em 1em;
+    background-color: #d01616d6;
+    font-size: 1em; 
+    border-radius: 12px;
+}
+
+.button a, .content-on-image h2 {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.find-more:hover {
+    background-color: #ca3f2cc9;
+}
+
+/* About Us */
+.about-section{
+    margin-top:4em ;
+}
+
+.about-section1{
+    margin-top:1em;
+}
+
+.location-heading{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container{
+    min-height: 300px;
+    display: flex; 
+}
+
+#location-text{
+    margin: 0 auto;
+    padding: 3em 1.5em;
+    background-color: rgba(255, 255, 255, 0.747);
+    flex-direction: column;  
+    border-radius: 7px;
+}
+
+#location-map{
+    min-width: 40vw;
+    margin: 0 auto;
+}
+
+#location-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-us{
+    width: 50vw;
+    padding: 0 2em;
+    margin: 0 auto;
+}
+
+
+/* Activity */
+.activity-section{
+    margin-bottom: 4em;
+    margin-right: 1em;
+}
+.activity-article{
+    width: 56%;; 
+}
+
+.photo{
+    width: 450px;
+}
+
+.photo img, .photo iframe, .photo-book img {
+    width: 100%;
+    height: 100%;  
+} 
+
+/* Accommodation */
+.accommodation-section{
+    margin-bottom: 3em;
+    margin-right: 1em;
+}
+.book {
+    height: 3em;
+    margin: 0 1.5em;
+    display: flex;
+    justify-content: center
+}
+
+.book:hover {
+    box-shadow: 3px 16px 16px 0 rgba(211, 11, 11, 0.438);
+}
+
+#second-hotel-image, #first-hotel-image{
+    animation-name: slideshow;
+    animation-duration: 1.5s;
+}
+
+
+/* Booking  */
+
+.photo-book{
+    max-height: 100%;
+    width: 40%;
+    margin: 0;
+}
+
+.photo-book img{
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+fieldset{
+    display: flex;
+    padding: 0;
+    margin: 0 2em 5em 2em;
+    border-radius: 16px;
+    background: linear-gradient(141deg, #ffa8b9 0%, #ffb7a1 51%, #ffc88a 75%);;
+}
+
+.form{
+    margin: 2em auto;
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+.book-info{
+    margin:0.3em 1em;
+    display: flex;
+    align-items: center;
+}
+.book-info p {
+    margin-top: 0;
+}
+.book-input{
+    margin-left: 1em;
+}
+
+input[type=text], input[type=number], input[type=date], input[type=email] {
+    border-radius: 5px;
+    height: 1.7em;
+    border: 0
+}
+
+.check-available{
+    justify-content: space-around;
+}
+.check-available p{
+    margin-top: 1em;
+}
+
+.submission button, .check-available button{
+    float: left;
+    height: 2em;
+    font-size: 0.7em;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(-90deg, red, orange);
+}
+
+.submission button:hover, .check-available button:hover{
+    background: linear-gradient(-90deg, orange, rgb(231, 75, 14), red);
+}
+
+.submission{
+    display: flex;
+    justify-content: end;
+}
+
+.pop-up-window{
+    width: 30vw;
+    position: absolute;
+    color: #37373f;
+    left: 36%;
+    background-color: rgb(250 235 235 / 94%);
+    border-radius: 13px;
+    align-items: center;
+    flex-direction: column;
+    animation-name:slowShow;
+    animation-duration: 1.5s;
+}
+
+@keyframes slowShow {
+    0%{opacity: 0} 
+    100% {opacity: 1}
+}
+
+.window-ticket{
+    display: none;
+}
+
+.window-accommodation{
+    display: none;
+}
+
+.error-message{
+    color: #ff0000;
+}
+.pop-up-window span{
+    position:relative;
+    top: 5%;
+    left: 45%;
+}
+
+.pop-up-window div{
+    position: relative;
+    top: 14%;
+    right: 1%;
+    font-size: 3em;
+}
+.pop-up-window p {
+    margin-top: 0;
+    color: indianred;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 15em;
+    background-color: #b32f2f;
+}
+
+#footer-container{
+    height: 200px;
+    position:relative;
+    top:2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-list li,.footer-list li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 0.5em;
+}
+
+.footer-list img {
+    width: 30px;
+  }
+.footer-list img:hover , .footer-list li a:hover{
+    opacity: 0.3;
+}
+
+/* breakpoint */
+
+@media screen and (max-width: 1100px){
+    body{
+        font-size: 16px;
+    }
+
+    .coloum-container{
+        margin-right: 1.5em;
+    }
+    .book{
+        margin: 0;
+    }
+    .activity-article{
+        margin-right: 1em;
+    }
+    .check-date{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    body{
+        font-size: 14px;
+    }
+    .coloum-container{
+        margin-right: 0;
+    }
+    section,.contact-container, fieldset, .submission,.check-available{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    header{
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #photo-header{
+        top: 1.8em;
+
+        height:12.2em ;
+    }
+
+    .inside-container{
+        flex-direction: column;
+    } 
+
+    /* header */
+    #photo-header .in-main-page{
+        height: 38vh;
+    }
+
+    /* navigation bar */
+    nav{
+        display: flex;
+        justify-content: start;
+        position: fixed;
+        top: 3.29em;
+        background-color: #851717;
+        width: 11em;
+    }
+    #menu{
+        display: block;
+        z-index: 2;
+    }
+    #menu span{
+        display: flex;
+        justify-content: center;
+        font-size: 2.5em;
+        color: white;
+        width: 1.5em;
+        margin-right: 0.5em;
+    }
+    #menu article{
+        left:86%;
+    }
+   
+    .inside-container{
+        display: none;
+        justify-content: start;
+    }
+
+
+    /* activity */
+
+    .vedio-train-container, .history-video{
+        min-height: 10em; 
+        width: 80%;
+        margin: 0 auto; 
+    }
+    .photo img, .photo iframe {
+        width: 80vw;
+        height: 100%;
+        min-height: 22em;
+        margin: 0 auto; 
+    }
+
+    .activity-article{
+        width: 95%;
+        margin: 0 1.5em;
+    } 
+
+    .pop-up-window{
+        left:15%;
+        min-width: 16em;
+    }
+    /* Booking page */
+    fieldset{
+        width: 80vw;
+        margin: 2em auto;
+    }
+
+    .form{
+        margin: 0 auto;
+    }
+    .submission button{
+        margin-bottom: 1em;
+    }
+    
+    /* footer */
+
+    #footer-container{
+       height: 8em;
+    } 
+    .photo-book{
+        width: 100%;
+        height: 55vh;
+    }
+    .photo-book img{
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 0;
+    }
+    .footer-list{
+        padding-inline-start:20px;
+    } 
+    .footer-list img{
+        width: 20px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
