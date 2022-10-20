@@ -50,6 +50,7 @@
                 <?php if (isset($_SESSION["user_id"])):?>
 
                     <a href="logout.php">Log Out</a>
+                    <p id="userID">Hello <?= htmlspecialchars($user["name"])?></p>
 
                 <?php else: ?>
 
