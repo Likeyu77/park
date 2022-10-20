@@ -58,27 +58,28 @@ if (isset($_SESSION["user_id"])) {
                 <p>I R P</p>
             </article>
             <div class="inside-container">
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
 
-                <a  href="about.html">About Us</a>
+                <a  href="about.php">About Us</a>
 
-                <a href="activity.html">Activity</a>
+                <a href="activity.php">Activity</a>
 
-                <a href="accommodation.html">Accommodation</a>
+                <a href="accommodation.php">Accommodation</a>
 
-                <a href="book.html">Book Now</a>
+                <a href="book.php">Book Now</a>
+
                 <?php if (isset($_SESSION["user_id"])):?>
-                    
+
                     <a href="logout.php">Log Out</a>
-                    <p id="userID">Hello <?= htmlspecialchars($user["name"])?></p>
 
                 <?php else: ?>
 
                     <a href="signup.html">Sign Up</a>
                     <a href="login.php">Log In</a>
 
+
                 <?php endif; ?>
-            
+           
             </div>
         </nav>
         <section class="animation-container">

@@ -34,15 +34,15 @@
             </article>
 
             <div class="inside-container">
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
 
-                <a  href="about.html">About Us</a>
+                <a  href="about.php">About Us</a>
 
-                <a href="activity.html">Activity</a>
+                <a href="activity.php">Activity</a>
 
-                <a href="accommodation.html">Accommodation</a>
+                <a href="accommodation.php">Accommodation</a>
 
-                <a href="book.html">Book Now</a>
+                <a href="book.php">Book Now</a>
 
                 <?php if (isset($_SESSION["user_id"])):?>
 
@@ -55,7 +55,7 @@
 
 
                 <?php endif; ?>
-                
+           
             </div>
         </nav>
 
