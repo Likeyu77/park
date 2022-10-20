@@ -15,9 +15,9 @@ if ($mysqli->connect_errno) {
 
 $sql = "CREATE TABLE IF NOT EXISTS `park_db`.`user` (`id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(128) NOT NULL , `email` VARCHAR(255) NOT NULL , `password_hash` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`), UNIQUE (`email`)) ENGINE = InnoDB;";
 
-if ($conn->query($sql) == TRUE){
+if ($mysqli->query($sql) == TRUE){
     echo"";
 }else{
-    echo"error creating table: " . $conn->error;
+    echo"error creating table: " . $mysqli->error;
 }
 return $mysqli;
